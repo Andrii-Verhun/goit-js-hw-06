@@ -13,6 +13,6 @@ const images = [
   },
 ];
 
-const list = images.map((el) => `<li><img scr="${el.url}" alt="${el.alt}"/></li>`).join('');
+const list = images.map((el) => `<li><img src="${el.url}" alt="${el.alt}"/></li>`).join('');
 
 document.querySelector('.gallery').insertAdjacentHTML('beforeend', list);
