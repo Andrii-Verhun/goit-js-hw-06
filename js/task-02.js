@@ -7,9 +7,10 @@ const ingredients = [
   'Condiments',
 ];
 
-ingredients.map((el) => {
+const lisItem = ingredients.map((el) => {
   const element = document.createElement('li');
   element.textContent = `${el}`;
   element.classList.add('item');
-  document.querySelector('#ingredients').append(element);
+  return element;
 });
+document.querySelector('#ingredients').append(...lisItem);
